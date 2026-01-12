@@ -60,7 +60,7 @@ export const generateChatResponse = async (userMessage: string, history: ChatMes
     }));
 
     const response = await ai.models.generateContent({
-      model: 'gemini-3-flash-preview',
+      model: 'gemini-flash-lite-latest',
       contents: [
         ...chatHistory,
         { role: 'user', parts: [{ text: userMessage }] }
